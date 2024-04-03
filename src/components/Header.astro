@@ -1,0 +1,14 @@
+---
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+
+const pathname = Astro.url.pathname
+---
+
+<header class="border-b border-brightGray">
+  <Container>
+    <div class="flex flex-wrap gap-2 font-['MADEOuterSans'] text-darkGray">
+      <Link href="/" underline={pathname === "/"}>Archive</Link>
+    </div>
+  </Container>
+</header>
